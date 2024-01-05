@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Droid+Sans|Roboto+Slab:400,700');
+
+
+* {
+    font-family: "Raleway";
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+
+    &__hour-input {
+        min-height: 50px;
+        max-width: 150px;
+        padding: 0 1rem;
+        color: #5e4dcd;
+        font-size: 15px;
+        border: 1px solid #5e4dcd;
+        border-radius: 6px 0 0 6px;
+        background-color: transparent;
+
+        &:focus,
+        &:focus-visible {
+            border-color: #3898EC;
+            outline: none;
+        }
+    }
+
+    &__button-submit {
+        min-height: 50px;
+        padding: .5em 1em;
+        border: none;
+        border-radius: 0 6px 6px 0;
+        background-color: #5e4dcd;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color .3s ease-in-out;
+
+        &:hover {
+            background-color: #5e5dcd;
+        }
+    }
+}
+
+.futureDate {
+    color: #5e4dcd;
+}
